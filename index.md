@@ -64,6 +64,8 @@ I am always open to research collaborations and am currently recruiting Masterâ€
 <b>Conference Papers</b></p>
 
 <ol>
+</li> 
+  <li><p><b>[ACMMM2026]</b> Runlong Cao, Yuming Zhang, Tianrun Chen, Xinda Yu, Ying Zang, <b>Lanyun Zhu</b>, Tong Zhang, Zhen Cui, Chunyan Xu,SAM3-Adapter: Hierarchically Learning Task-Adaptive Prompts for Fine-Grained Segmentation, <i> ACM International Conference on Multimedia (ACMMM)</i> 2026<font color = 'red'> </font> </p>
 </li>
   <li><p><b>[ICML2026]</b> Xuanyi Liu, Deyi Ji, Liqun Liu, <b>Lanyun Zhu</b>, Xuhang Chen, Qianxiong Xu, Peng Shu, Huan Yu, Jie Jiang, Feng Gao, Siwei Ma, CamGeo: Sparse Camera-Conditioned Image-to-Video Generation with 3D Geometry Priors, <i> International Conference on Machine Learning (ICML)</i> 2026<font color = 'red'> </font> </p>
 </li> 
