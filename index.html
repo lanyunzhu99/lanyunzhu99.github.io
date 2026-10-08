@@ -15,15 +15,44 @@
       opacity: 0.5; /* 设置字体的透明度，值为 0.0（完全透明）到 1.0（完全不透明）之间 */
   }
   .visitor-map {
-      margin: 1em 0 0;
-      min-height: 70px;
-      overflow: hidden;
+      width: 100%;
+      max-width: 280px;
+      box-sizing: border-box;
+      margin: 2.5em auto 1em;
+      padding: 10px 12px 8px;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background: #ffffff;
       text-align: center;
+  }
+  .visitor-map-title {
+      margin: 0 0 12px;
+      color: #527bbd;
+      font-size: 1em;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+  }
+  .visitor-map-widget {
+      min-height: 130px;
   }
   .visitor-map img,
   .visitor-map canvas,
   .visitor-map iframe {
       max-width: 100%;
+  }
+  .visitor-map img {
+      height: auto;
+  }
+  .visitor-map-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.8em;
+      color: #64748b;
+  }
+  @media (max-width: 600px) {
+      .visitor-map {
+          padding: 14px 10px 12px;
+      }
   }
 </style>
 <meta name="google-site-verification" content="loaFQ6oWlZ1NZ4wxTUNrFzjSMrNeTcOtZnV5Z7P6D9o" />
@@ -164,13 +193,15 @@ I am always open to research collaborations and am currently recruiting Master�
 
 <h2>Experiences</h2>
 <ol>
+  <li>Research Intern | Alibaba, Hangzhou, China | Nov 2023 - May 2024</p>
+     Supervisor: Prof.Jieping Ye</a></p>
   <li>Research Intern | CCVL Lab, Johns Hopkins University| Apr 2020 - Sep 2021</p>
      Supervisor: Prof.Alan Yuille</a></p>
   </li>
   <li>Research Intern | Sensetime, Beijing, China | June 2020 - July 2021</p>
     Mentor: <a href="https://jankyee.github.io">Dr. Deyi Ji</a> |  Mr. Wei Wu</p>
   </li>
-  <li>Research Intern | Megvii, Beijing, China | Sep. 2019 - May 2020</p>
+  <li>Research Intern | Megvii, Beijing, China | Sep 2019 - May 2020</p>
     Mentor: Dr. Zhikang Liu | Leader: Dr. Chi Zhang</p>
   </li>
 </ol>
@@ -189,8 +220,25 @@ I am always open to research collaborations and am currently recruiting Master�
 <li><b>Other Services</b>: 国家具身智能中试基地技术委员会委员
 </li>
 
-<div class="visitor-map">
-  <a href="https://info.flagcounter.com/KbNi" target="_blank" rel="noopener noreferrer"><img src="https://s01.flagcounter.com/map/KbNi/size_t/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Map of website visitor locations and page views" border="0" /></a>
+<div class="visitor-map" role="region" aria-label="Website visitor locations">
+  <p class="visitor-map-title">Visitors around the world</p>
+  <div class="visitor-map-widget">
+    <script type="text/javascript">
+      (function () {
+          // Count only visits to the published homepage, excluding local previews.
+          if (location.hostname !== 'lanyunzhu99.github.io') return;
+          fetch('https://feed-pulse.com/api/track/188ff160-24fe-4c89-8b8b-1aee7ccda2a7', {
+              method: 'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify({host: location.host}),
+              keepalive: true
+          }).catch(function () {});
+      }());
+    </script>
+    <script type="text/javascript" id="visitor-world-map" async="async" src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=188ff160-24fe-4c89-8b8b-1aee7ccda2a7&amp;map=flat&amp;theme=ivory&amp;sz=sm&amp;w=250&amp;h=130"></script>
+    <noscript><p>Please enable JavaScript to view the visitor map.</p></noscript>
+  </div>
+  <a class="visitor-map-link" href="https://feed-pulse.com/site/lanyunzhu99.github.io" target="_blank" rel="noopener noreferrer">Visitor statistics &#8599;</a>
 </div>
 </td>
 </tr>
