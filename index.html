@@ -35,6 +35,18 @@
   .visitor-map-widget {
       min-height: 125px;
   }
+  /* Anchor the widget's absolute map and pins inside its own container. */
+  .visitor-map-widget > span {
+      position: relative !important;
+      margin-right: 0 !important;
+      max-width: 100%;
+      text-align: left;
+      vertical-align: top;
+  }
+  .visitor-map-widget > span > img {
+      top: 0;
+      left: 0;
+  }
   .visitor-map img,
   .visitor-map canvas,
   .visitor-map iframe {
