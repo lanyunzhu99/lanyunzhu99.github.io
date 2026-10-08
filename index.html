@@ -20,40 +20,34 @@
       box-sizing: border-box;
       margin: 2.5em auto 1em;
       padding: 10px 12px 8px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #e8eef6;
       border-radius: 12px;
       background: #ffffff;
       text-align: center;
   }
   .visitor-map-title {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       color: #527bbd;
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: normal;
       letter-spacing: 0.02em;
   }
   .visitor-map-widget {
-      min-height: 125px;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto;
   }
-  /* Anchor the widget's absolute map and pins inside its own container. */
-  .visitor-map-widget > span {
-      position: relative !important;
-      margin-right: 0 !important;
-      max-width: 100%;
-      text-align: left;
-      vertical-align: top;
+  .visitor-map-widget a,
+  .visitor-map-widget img {
+      display: block;
+      width: 100%;
   }
-  .visitor-map-widget > span > img {
-      top: 0;
-      left: 0;
-  }
-  .visitor-map img,
-  .visitor-map canvas,
-  .visitor-map iframe {
-      max-width: 100%;
-  }
-  .visitor-map img {
+  .visitor-map-widget img {
       height: auto;
+      border: 0;
+  }
+  .visitor-map-widget a:hover {
+      border-bottom: none;
   }
   .visitor-map-link {
       display: inline-block;
@@ -235,11 +229,11 @@ I am always open to research collaborations and am currently recruiting Masterâ€
 <div class="visitor-map" role="region" aria-label="Website visitor locations">
   <p class="visitor-map-title">Visitors around the world</p>
   <div class="visitor-map-widget">
-    <script type="text/javascript" id="_waulanyun">var _wau = _wau || []; _wau.push(["map", "ojnb0i8zse", "lanyun", "250", "125", "night", "star-orange"]);</script>
-    <script type="text/javascript" async="async" src="https://waust.at/m.js"></script>
-    <noscript><p>Please enable JavaScript to view the visitor map.</p></noscript>
+    <a href="https://www.visitordots.com/details/vd_GUuw4xt1lSnD2aJLMuD_1C6C" target="_blank" rel="noopener noreferrer">
+      <img src="https://map.visitordots.com/vmap/61457457253090.png" alt="Visitor map" />
+    </a>
   </div>
-  <a class="visitor-map-link" href="https://whos.amung.us/stats/ojnb0i8zse/" target="_blank" rel="noopener noreferrer">Visitor statistics Â· whos.amung.us</a>
+  <a class="visitor-map-link" href="https://www.visitordots.com/create?widget=map&amp;theme_key=white-gray-dots&amp;dot_color=blue&amp;dot_shape=circle&amp;flag_theme=light&amp;columns=4&amp;maximum=24&amp;layout=footer&amp;from=widget" target="_blank" rel="noopener noreferrer">Get a free visitor map like this</a>
 </div>
 </td>
 </tr>
