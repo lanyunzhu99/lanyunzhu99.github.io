@@ -16,7 +16,7 @@
   }
   .visitor-map {
       width: 100%;
-      max-width: 280px;
+      max-width: 230px;
       box-sizing: border-box;
       margin: 2.5em auto 1em;
       padding: 10px 12px 8px;
@@ -33,7 +33,7 @@
       letter-spacing: 0.02em;
   }
   .visitor-map-widget {
-      min-height: 130px;
+      min-height: 90px;
   }
   .visitor-map img,
   .visitor-map canvas,
@@ -223,22 +223,11 @@ I am always open to research collaborations and am currently recruiting Masterâ€
 <div class="visitor-map" role="region" aria-label="Website visitor locations">
   <p class="visitor-map-title">Visitors around the world</p>
   <div class="visitor-map-widget">
-    <script type="text/javascript">
-      (function () {
-          // Count only visits to the published homepage, excluding local previews.
-          if (location.hostname !== 'lanyunzhu99.github.io') return;
-          fetch('https://feed-pulse.com/api/track/188ff160-24fe-4c89-8b8b-1aee7ccda2a7', {
-              method: 'POST',
-              headers: {'Content-Type': 'application/json'},
-              body: JSON.stringify({host: location.host}),
-              keepalive: true
-          }).catch(function () {});
-      }());
-    </script>
-    <script type="text/javascript" id="visitor-world-map" async="async" src="https://feed-pulse.com/api/embed/visitor-globe.js?site_id=188ff160-24fe-4c89-8b8b-1aee7ccda2a7&amp;map=flat&amp;theme=ivory&amp;sz=sm&amp;w=250&amp;h=130"></script>
-    <noscript><p>Please enable JavaScript to view the visitor map.</p></noscript>
+    <a href="https://smallcounter.com/vmap/1791466150/" target="_blank" rel="noopener noreferrer">
+      <img src="https://smallcounter.com/map/view.php?type=180&amp;id=1791466150" width="180" height="90" alt="World map of recent website visitor locations" referrerpolicy="no-referrer" />
+    </a>
   </div>
-  <a class="visitor-map-link" href="https://feed-pulse.com/site/lanyunzhu99.github.io" target="_blank" rel="noopener noreferrer">Visitor statistics &#8599;</a>
+  <a class="visitor-map-link" href="https://smallcounter.com/map/" target="_blank" rel="noopener noreferrer">Map counter Â· SmallCounter</a>
 </div>
 </td>
 </tr>
